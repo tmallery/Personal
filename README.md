@@ -1,3 +1,6 @@
+# Programming Portfolio
+This repository contains personal, mini projects, which serves as my programming portfolio.
+
 ## Code Examples
 
 ### Term Dictionary
