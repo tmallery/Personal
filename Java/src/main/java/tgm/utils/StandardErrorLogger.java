@@ -22,6 +22,6 @@ public class StandardErrorLogger implements Logger {
 	 */
 	@Override
 	public void debug(String msg) {
-
+		System.out.println(msg);
 	}
 }
