@@ -26,8 +26,8 @@ import tgm.utils.Log;
  * NotThreadSafe
  */
 public class GameOfLife {
-	static final byte 	DEAD_STATE = 0,
-						ALIVE_STATE = 1;
+	public static final byte 	DEAD_STATE = 0,
+								ALIVE_STATE = 1;
 
 	/**
 	 * Parses a cell state string which has the following requirements
@@ -44,7 +44,7 @@ public class GameOfLife {
 	 * @throws IllegalArgumentException if any of the rules above are not
 	 *                                  followed
 	 */
-	static byte[][] parseSquareState(String state) {
+	public static byte[][] parseSquareState(String state) {
 		byte[][] result = null;
 
 		if (state != null && state.length() > 0) {

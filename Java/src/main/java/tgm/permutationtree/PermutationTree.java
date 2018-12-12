@@ -39,6 +39,8 @@ import java.util.ArrayList;
  */
 public class PermutationTree<T> extends PermutationTreeNode {
 
+	private int m_treeDepth;
+
 	/**
 	 * Create a new permutation tree. The tree depth indicates
 	 * how long each permutation is.
@@ -47,6 +49,16 @@ public class PermutationTree<T> extends PermutationTreeNode {
 	 */
 	public PermutationTree(int depth, T[] valueArr) {
 		super(null, valueArr, depth);
+
+		m_treeDepth = depth;
+	}
+
+	/**
+	 * Returns the length of a single permutation in this tree
+	 * @return
+	 */
+	public int getTreeDepth() {
+		return m_treeDepth;
 	}
 
 	/**

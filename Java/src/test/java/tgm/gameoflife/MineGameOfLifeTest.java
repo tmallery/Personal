@@ -1,9 +1,7 @@
 package tgm.gameoflife;
 
 import org.junit.jupiter.api.Test;
-import tgm.utils.ArrayUtils;
-
-import static org.junit.jupiter.api.Assertions.*;
+import tgm.gameoflife.mine.MineGameOfLife;
 
 public class MineGameOfLifeTest {
 

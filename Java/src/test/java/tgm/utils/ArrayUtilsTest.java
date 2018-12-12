@@ -1,7 +1,7 @@
 package tgm.utils;
 
 import org.junit.jupiter.api.Test;
-import tgm.gameoflife.MineGameOfLife;
+import tgm.gameoflife.mine.MineGameOfLife;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 

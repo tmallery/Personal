@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tgm.gameoflife.mine.jobqueue</title>
+</head>
+<body>
+This package contains the code to mine the game of life with multiple threads.<br/>
+
+Design options:
+<ol>
+    <li>Single Responsibility components with job queue.<br/>
+        To reduce the system requirements the job queue will be entirely in memory.<br/>
+
+       Threads:
+        <ul>
+            <li>ThreadManager<ul><li>GameRunner [miner]</li></ul></li>
+            <li>ThreadManager<ul><li>ResultFilter</li></li></ul>
+        </ul>
+
+
+        <div>The Managers are chained together to create a pipeline without the need for saving jobs into a database.
+        </div>
+
+        <div>The downside to this design is that running the game is quick. Filtering out all the results we don't want, duplicates, non looping states, etc takes the most
+        amount of time.</div>
+    </li>
+    <li>
+        Multi pipeline threads.<br/>
+        Each thread is responsible for delivering one piece of input from start to finish.
+    </li>
+</ul>
+</body>
+</html>
