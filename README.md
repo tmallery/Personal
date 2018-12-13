@@ -1,8 +1,5 @@
 # Programming Portfolio
-<<<<<<< HEAD
-=======
 This repository contains personal, mini projects, which serves as my programming portfolio.
->>>>>>> 37b65b525f43fe12eb5a03f7a1fec207d615c0a1
 
 ## Code Examples
 
@@ -10,15 +7,9 @@ This repository contains personal, mini projects, which serves as my programming
 
 A simple dictionary of terms. The dictionary exists as a tree map where each node in the tree is a word from the input string. This itself isn't very interesting and just using a HashMap would be easier. The power comes from being able to take a string of tokens and use the dictionary to find the longest match.
 
-[Term Dictionary Source Package](https://github.com/tmallery/Personal/tree/master/Java/src/main/java/tgm/dictionary)
-<<<<<<< HEAD
-
-
 ### Game of Life
 
 A Java implementation of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
-
-[Source Package](https://github.com/tmallery/Personal/tree/master/Java/src/main/java/tgm)
 
 ### Permutation Tree
 
@@ -35,5 +26,3 @@ Switching from generating all inputs at once to this method produced an incredib
 ### MineGameOfLife
 
 ### MultiThreadedMiner
-=======
->>>>>>> 37b65b525f43fe12eb5a03f7a1fec207d615c0a1
