@@ -25,4 +25,16 @@ Switching from generating all inputs at once to this method produced an incredib
 
 ### MineGameOfLife
 
-### MultiThreadedMiner
+This is a simple driver of GameOfLife which will try all permutations to find unique oscilations.
+
+All permutations are precalcuated and then tried one by one. If an oscolation is found, it's recorded if we haven't seen that loop before.
+
+[Mine Source Package](https://github.com/tmallery/Personal/tree/master/Java/src/main/java/tgm/gameoflife/mine/)
+
+### MultithreadedMiner
+
+This implementation aims to solve two key issues with the single threaded implementation, parallel jobs to take advantage of multiple CPU cores, and uses a permutation tree to reduce the amount of system memory required.
+
+[Multithreaded Miner Source Package](https://github.com/tmallery/Personal/tree/master/Java/src/main/java/tgm/gameoflife/mine/multithreaded)
+
+
