@@ -9,6 +9,9 @@ import tgm.utils.ThreadManager;
 
 import java.util.ArrayList;
 
+/**
+ * Worker bee for running iterations of the GameOfLife.
+ */
 public class MinerThread extends WorkerThread<MinerJob> {
 
 	private static final boolean DEBUG = false;
@@ -22,6 +25,9 @@ public class MinerThread extends WorkerThread<MinerJob> {
 		m_miner = new MineGameOfLife();
 	}
 
+	/**
+	 * Runs through each of the inputs for this job and returns the results.
+	 */
 	@Override
 	protected ThreadResult processJob(MinerJob job) {
 		StringBuilder sb = new StringBuilder();
@@ -35,31 +41,8 @@ public class MinerThread extends WorkerThread<MinerJob> {
 
 			GameResult result = m_miner.mine(sb.toString(), ITERATION_MAX);
 
-
-//				if( result.type == GameResultType.LOOP ) {
-//					boolean unique = true;
-//					outer:
-//					for (GameResult otherResult : results) {
-//
-//						byte[][] otherCellState = GameOfLife.parseSquareState(otherResult.resultState);
-//
-//						for (int idx = result.loopStartIdx; idx < result.states.size(); idx++) {
-//							//if(m_running == false) {Log.debug("on idx " + idx + " of " + result.states.size()); }
-//							String stateStr = result.states.get(idx);
-//							byte[][] cellState = GameOfLife.parseSquareState(stateStr);
-//							if (MineGameOfLifeUtils.getInstance().matches(otherCellState, cellState)) {
-//								unique = false;
-//								break outer;
-//							}
-//						}
-//					}
-//					if (unique) {
 			results.add(result);
-//					}
-//				}
 		}
-
-		//ResultThreadManager.saveAllResults(results);
 
 		if(DEBUG) Log.debug("GameRunnerThread: Finished Job, found " + results.size());
 		return new MineResult(results);
