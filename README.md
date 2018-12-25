@@ -11,6 +11,8 @@ A simple dictionary of terms. The dictionary exists as a tree map where each nod
 
 A Java implementation of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
 
+To see a few results of mining the Game of Life, go [here](https://thomasmallery.com/conways-game-of-life/).
+
 ### Permutation Tree
 
 This was created as a way to represent the input states for mining the Game of Life. Note a 6x6 grid of binary values has over 67 million combinations. Using a String to represent the input and a recursive function to generate an array of all possible combinations, would take up over 65 GB and my computer doesn't have that much system memory.
