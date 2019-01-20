@@ -55,7 +55,7 @@ public class MineGameOfLifeUtils {
 	 * @param cells
 	 * @return
 	 */
-	private byte[][] createSmallestCellGrid(byte[][] cells ) {
+	public byte[][] createSmallestCellGrid(byte[][] cells ) {
 
 		int lowerY = cells.length, lowerX = cells.length, upperY = 0, upperX = 0;
 
